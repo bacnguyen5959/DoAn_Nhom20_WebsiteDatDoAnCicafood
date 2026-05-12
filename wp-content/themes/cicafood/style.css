@@ -1,0 +1,269 @@
+/*
+Theme Name:   Cicafood
+Theme URI:    https://cicafood.online
+Description:  Child theme của Storefront — Giao diện đặt đồ ăn trực tuyến Cicafood. Tùy biến màu sắc brand #ee2624, typography và layout cho hệ thống food delivery tích hợp WooCommerce.
+Author:       Nguyễn Bá Tuấn Anh
+Author URI:   https://cicafood.online
+Template:     storefront
+Version:      1.0.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  cicafood
+Tags:         food, delivery, ecommerce, woocommerce, restaurant, child-theme
+*/
+
+/* ============================================================
+   CICAFOOD — Brand Color Overrides cho TwentyTwentyFive
+   Ghi đè CSS variables của theme cha
+   ============================================================ */
+
+:root {
+    /* Brand colors */
+    --cica-red:        #ee2624;
+    --cica-red-dark:   #c41e1c;
+    --cica-red-light:  #ff4542;
+    --cica-orange:     #f97316;
+    --cica-yellow:     #fbbf24;
+    --cica-green:      #22c55e;
+
+    /* Override TwentyTwentyFive accent color */
+    --wp--preset--color--primary:    #ee2624;
+    --wp--preset--color--secondary:  #c41e1c;
+    --wp--preset--color--accent:     #ee2624;
+    --wp--preset--color--vivid-red:  #ee2624;
+
+    /* Typography */
+    --wp--preset--font-family--body:    'Inter', 'Segoe UI', system-ui, sans-serif;
+    --wp--preset--font-family--heading: 'Inter', 'Segoe UI', system-ui, sans-serif;
+}
+
+/* ============================================================
+   GLOBAL RESETS
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: #f5f5f5;
+    color: #111827;
+}
+
+a { color: var(--cica-red); }
+a:hover { color: var(--cica-red-dark); }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #ee2624; border-radius: 3px; }
+
+/* ============================================================
+   HIDE STOREFRONT DEFAULT HEADER/FOOTER
+   ============================================================ */
+#masthead,
+.storefront-handheld-footer-bar,
+.storefront-sticky-add-to-cart,
+#colophon .col-full > *:not(#cica-footer-inner) {
+    display: none !important;
+}
+#colophon { padding: 0 !important; background: transparent !important; border: none !important; }
+#content { padding-top: 0 !important; }
+.col-full { max-width: 100% !important; padding: 0 !important; }
+.site-content > .col-full { padding: 0 !important; }
+
+/* Remove Storefront breadcrumb */
+.woocommerce-breadcrumb { display: none !important; }
+
+/* ============================================================
+   BUTTONS — Override TwentyTwentyFive default buttons
+   ============================================================ */
+.wp-block-button__link,
+.wp-element-button {
+    background-color: #ee2624 !important;
+    color: #ffffff !important;
+    border-radius: 999px !important;
+    font-weight: 700 !important;
+    border: none !important;
+    transition: background-color 0.2s, transform 0.1s !important;
+    padding: 0.6rem 1.5rem !important;
+}
+.wp-block-button__link:hover,
+.wp-element-button:hover {
+    background-color: #c41e1c !important;
+    transform: translateY(-1px);
+}
+
+/* Outline button variant */
+.wp-block-button.is-style-outline .wp-block-button__link {
+    background-color: transparent !important;
+    color: #ee2624 !important;
+    border: 2px solid #ee2624 !important;
+}
+.wp-block-button.is-style-outline .wp-block-button__link:hover {
+    background-color: #ee2624 !important;
+    color: #ffffff !important;
+}
+
+/* ============================================================
+   CICAFOOD UTILITY CLASSES
+   Dùng trong shortcode views của plugin
+   ============================================================ */
+
+/* Toast notification */
+#cica-toast-container {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cica-toast {
+    padding: 12px 20px;
+    border-radius: 12px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    animation: cicaSlideIn 0.3s ease;
+}
+.cica-toast.success { background: #16a34a; }
+.cica-toast.error   { background: #dc2626; }
+.cica-toast.info    { background: #2563eb; }
+
+@keyframes cicaSlideIn {
+    from { opacity: 0; transform: translateX(50px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+/* Card hover effect */
+.cica-card-hover {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.cica-card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* Loading spinner */
+.cica-spinner {
+    width: 20px; height: 20px;
+    border: 2px solid #fff;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: cicaSpin 0.6s linear infinite;
+    display: inline-block;
+}
+@keyframes cicaSpin { to { transform: rotate(360deg); } }
+
+/* Back to top button */
+#cica-back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 44px; height: 44px;
+    background: #ee2624;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(238,38,36,0.3);
+    cursor: pointer;
+    font-size: 14px;
+    z-index: 50;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+#cica-back-to-top:hover { background: #c41e1c; }
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 768px) {
+    .wp-block-site-title { font-size: 1.2rem !important; }
+}
+
+/* ============================================================
+   BODY & LAYOUT IMPROVEMENTS
+   ============================================================ */
+body {
+    background: #f8f8f8 !important;
+    min-height: 100vh;
+}
+
+/* Ẩn page title mặc định của Storefront (chữ "Nhà hàng", "Voucher"...) */
+.entry-title,
+.page-title,
+h1.entry-title,
+.storefront-breadcrumb,
+.woocommerce-breadcrumb,
+.site-main > article > header.entry-header,
+.hentry .entry-header { display: none !important; }
+
+/* Ẩn chữ "Sửa" */
+.edit-link, .post-edit-link { display: none !important; }
+
+/* Remove default WP admin bar offset conflict */
+#wpadminbar ~ #page #cica-header {
+    top: 32px;
+}
+@media screen and (max-width: 782px) {
+    #wpadminbar ~ #page #cica-header { top: 46px; }
+}
+
+/* ============================================================
+   RESTAURANT CARDS — enhanced
+   ============================================================ */
+.cica-restaurant-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border: 1px solid #f0f0f0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.cica-restaurant-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.1);
+}
+
+/* ============================================================
+   TAILWIND CDN WARNING SUPPRESSION (dev only)
+   ============================================================ */
+/* Note: Replace CDN with CLI build for production */
+
+/* ============================================================
+   FORM INPUTS — global style
+   ============================================================ */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+textarea,
+select {
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* ============================================================
+   ANIMATIONS
+   ============================================================ */
+@keyframes cicaFadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.cica-fade-in { animation: cicaFadeIn 0.4s ease forwards; }
+
+/* ============================================================
+   RESPONSIVE UTILITIES
+   ============================================================ */
+@media (max-width: 640px) {
+    .hide-mobile { display: none !important; }
+}
+@media (min-width: 641px) {
+    .show-mobile-only { display: none !important; }
+}
