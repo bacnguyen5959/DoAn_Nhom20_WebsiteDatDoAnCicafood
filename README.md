@@ -9,11 +9,6 @@ Dự án được thực hiện trong khuôn khổ môn học **Phần Mềm Mã
 **Giảng viên hướng dẫn:** ThS. Cấn Đức Điệp
 
 ---
-##  Link Website đã Deploy
-
- **Website chính thức:** [https://cicafood.online](https://cicafood.online)
-
----
 
 ## Danh sách thành viên & Phân công nhiệm vụ
 
@@ -72,6 +67,12 @@ Dự án được thực hiện trong khuôn khổ môn học **Phần Mềm Mã
 - Quản lý thông tin thanh toán QR
 
 ---
+
+##  Link Website đã Deploy
+
+ **Website chính thức:** [https://cicafood.online](https://cicafood.online)
+
+--- 
 
 ## Hướng dẫn cài đặt
 
@@ -154,20 +155,20 @@ define('DB_HOST', 'localhost');
 
 | # | Hình ảnh | Mô tả |
 |:---:|---|---|
-| 9 | ![Đăng nhập](imgui/imgui10.png) | Giao diện Đăng nhập |
-| 10 | ![Đăng ký](imgui/imgui11.png) | Giao diện Đăng ký |
-| 11 | ![Dashboard](imgui/imgui12.png) | Giao diện Dashboard |
-| 12 | ![Trang chủ](imgui/imgui13.png) | Giao diện Trang chủ |
-| 13 | ![Nhà hàng](imgui/imgui14.png) | Giao diện Nhà hàng |
-| 14 | ![Quản lý voucher](imgui/imgui15.png) | Giao diện Quản lý voucher |
-| 15 | ![Quản lý đơn hàng](imgui/imgui16.png) | Giao diện Quản lý đơn hàng cho khách hàng |
-| 16 | ![Chi tiết đơn hàng](imgui/imgui17.png) | Chi tiết đơn hàng |
-| 17 | ![Giỏ hàng](imgui/imgui18.png) | Giao diện Giỏ hàng |
-| 18 | ![Hồ sơ cá nhân](imgui/imgui19.png) | Giao diện Hồ sơ cá nhân |
-| 19 | ![Nhà hàng yêu thích](imgui/imgui20.png) | Giao diện Nhà hàng yêu thích |
-| 20 | ![Quản lý menu](imgui/imgui21.png) | Chức năng Quản lý menu |
-| 21 | ![Thêm voucher](imgui/imgui22.png) | Chức năng Thêm voucher |
-| 22 | ![Cài đặt nhà hàng](imgui/imgui23.png) | Chức năng Cài đặt nhà hàng |
+| 9 | ![Đăng nhập](imgui/imgui9.png) | Giao diện Đăng nhập |
+| 10 | ![Đăng ký](imgui/imgui10.png) | Giao diện Đăng ký |
+| 11 | ![Dashboard](imgui/imgui11.png) | Giao diện Dashboard |
+| 12 | ![Trang chủ](imgui/imgui12.png) | Giao diện Trang chủ |
+| 13 | ![Nhà hàng](imgui/imgui13.png) | Giao diện Nhà hàng |
+| 14 | ![Quản lý voucher](imgui/imgui14.png) | Giao diện Quản lý voucher |
+| 15 | ![Quản lý đơn hàng](imgui/imgui15.png) | Giao diện Quản lý đơn hàng cho khách hàng |
+| 16 | ![Chi tiết đơn hàng](imgui/imgui16.png) | Chi tiết đơn hàng |
+| 17 | ![Giỏ hàng](imgui/imgui17.png) | Giao diện Giỏ hàng |
+| 18 | ![Hồ sơ cá nhân](imgui/imgui18.png) | Giao diện Hồ sơ cá nhân |
+| 19 | ![Nhà hàng yêu thích](imgui/imgui19.png) | Giao diện Nhà hàng yêu thích |
+| 20 | ![Quản lý menu](imgui/imgui20.png) | Chức năng Quản lý menu |
+| 21 | ![Thêm voucher](imgui/imgui21.png) | Chức năng Thêm voucher |
+| 22 | ![Cài đặt nhà hàng](imgui/imgui22.png) | Chức năng Cài đặt nhà hàng |
 
 ---
 
