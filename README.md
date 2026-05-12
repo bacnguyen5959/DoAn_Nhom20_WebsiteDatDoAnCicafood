@@ -174,7 +174,7 @@ define('DB_HOST', 'localhost');
 
 ## Video Demo
 
- **Link video demo: 
+[![Watch the demo](https://img.youtube.com/vi/6dcfDsn0eN4/maxresdefault.jpg)](https://www.youtube.com/watch?v=6dcfDsn0eN4)
 
 ---
 
