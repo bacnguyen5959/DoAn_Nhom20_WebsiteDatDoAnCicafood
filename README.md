@@ -1,6 +1,6 @@
-# 🍔 Website Đặt Đồ Ăn Cicafood
+# Website Đặt Đồ Ăn Cicafood
 
-## 📌 Giới thiệu
+## Giới thiệu
 
 **Cicafood** là một website đặt đồ ăn trực tuyến được xây dựng trên nền tảng **WordPress** kết hợp plugin tùy chỉnh **Cicafood Core**. Hệ thống cho phép khách hàng duyệt nhà hàng, đặt món ăn, quản lý đơn hàng và sử dụng voucher giảm giá. Đồng thời, chủ nhà hàng (Merchant) có thể quản lý menu, đơn hàng và voucher thông qua giao diện quản trị riêng.
 
