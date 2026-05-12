@@ -9,6 +9,11 @@ Dự án được thực hiện trong khuôn khổ môn học **Phần Mềm Mã
 **Giảng viên hướng dẫn:** ThS. Cấn Đức Điệp
 
 ---
+##  Link Website đã Deploy
+
+ **Website chính thức:** [https://cicafood.online](https://cicafood.online)
+
+---
 
 ## Danh sách thành viên & Phân công nhiệm vụ
 
@@ -144,45 +149,35 @@ define('DB_HOST', 'localhost');
 | 6 | ![Danh mục](imgui/imgui6.png) | Giao diện Danh mục trong Cicafood Core |
 | 7 | ![Thanh toán QR](imgui/imgui7.png) | Giao diện Thông tin thanh toán QR trong Cicafood Core |
 | 8 | ![Phân tích & Thống kê](imgui/imgui8.png) | Giao diện Phân tích & Thống kê dữ liệu trong Cicafood |
-| 9 | ![Cài đặt WooCommerce](imgui/imgui9.png) | Cài đặt WooCommerce |
 
 ### Giao diện người dùng (Frontend)
 
 | # | Hình ảnh | Mô tả |
 |:---:|---|---|
-| 10 | ![Đăng nhập](imgui/imgui10.png) | Giao diện Đăng nhập |
-| 11 | ![Đăng ký](imgui/imgui11.png) | Giao diện Đăng ký |
-| 12 | ![Dashboard](imgui/imgui12.png) | Giao diện Dashboard |
-| 13 | ![Trang chủ](imgui/imgui13.png) | Giao diện Trang chủ |
-| 14 | ![Nhà hàng](imgui/imgui14.png) | Giao diện Nhà hàng |
-| 15 | ![Quản lý voucher](imgui/imgui15.png) | Giao diện Quản lý voucher |
-| 16 | ![Quản lý đơn hàng](imgui/imgui16.png) | Giao diện Quản lý đơn hàng cho khách hàng |
-| 17 | ![Chi tiết đơn hàng](imgui/imgui17.png) | Chi tiết đơn hàng |
-| 18 | ![Giỏ hàng](imgui/imgui18.png) | Giao diện Giỏ hàng |
-| 19 | ![Hồ sơ cá nhân](imgui/imgui19.png) | Giao diện Hồ sơ cá nhân |
-| 20 | ![Nhà hàng yêu thích](imgui/imgui20.png) | Giao diện Nhà hàng yêu thích |
-| 21 | ![Quản lý menu](imgui/imgui21.png) | Chức năng Quản lý menu |
-| 22 | ![Thêm voucher](imgui/imgui22.png) | Chức năng Thêm voucher |
-| 23 | ![Cài đặt nhà hàng](imgui/imgui23.png) | Chức năng Cài đặt nhà hàng |
+| 9 | ![Đăng nhập](imgui/imgui10.png) | Giao diện Đăng nhập |
+| 10 | ![Đăng ký](imgui/imgui11.png) | Giao diện Đăng ký |
+| 11 | ![Dashboard](imgui/imgui12.png) | Giao diện Dashboard |
+| 12 | ![Trang chủ](imgui/imgui13.png) | Giao diện Trang chủ |
+| 13 | ![Nhà hàng](imgui/imgui14.png) | Giao diện Nhà hàng |
+| 14 | ![Quản lý voucher](imgui/imgui15.png) | Giao diện Quản lý voucher |
+| 15 | ![Quản lý đơn hàng](imgui/imgui16.png) | Giao diện Quản lý đơn hàng cho khách hàng |
+| 16 | ![Chi tiết đơn hàng](imgui/imgui17.png) | Chi tiết đơn hàng |
+| 17 | ![Giỏ hàng](imgui/imgui18.png) | Giao diện Giỏ hàng |
+| 18 | ![Hồ sơ cá nhân](imgui/imgui19.png) | Giao diện Hồ sơ cá nhân |
+| 19 | ![Nhà hàng yêu thích](imgui/imgui20.png) | Giao diện Nhà hàng yêu thích |
+| 20 | ![Quản lý menu](imgui/imgui21.png) | Chức năng Quản lý menu |
+| 21 | ![Thêm voucher](imgui/imgui22.png) | Chức năng Thêm voucher |
+| 22 | ![Cài đặt nhà hàng](imgui/imgui23.png) | Chức năng Cài đặt nhà hàng |
 
 ---
 
-## 🎥 Video Demo
+## Video Demo
 
-🔗 **Link video demo:** *(Đang cập nhật)*
-
-<!-- Thay link video demo vào đây, ví dụ: -->
-<!-- [Xem video demo trên YouTube](https://youtu.be/xxxxxx) -->
+ **Link video demo: 
 
 ---
 
-## 🌐 Link Website đã Deploy
-
-🔗 **Website chính thức:** [https://cicafood.online](https://cicafood.online)
-
----
-
-## 📁 Cấu trúc thư mục dự án
+##  Cấu trúc thư mục dự án
 
 ### Plugin Cicafood Core
 
