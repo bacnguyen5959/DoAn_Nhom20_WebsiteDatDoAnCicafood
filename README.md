@@ -136,6 +136,12 @@ define('DB_HOST', 'localhost');
 
 ---
 
+## Video Demo
+
+[![Watch the demo](https://img.youtube.com/vi/cYCjoNcZ1rU/maxresdefault.jpg)](https://www.youtube.com/watch?v=cYCjoNcZ1rU)
+
+--- 
+
 ## 📸 Hình ảnh minh họa hệ thống
 
 ### Quản trị hệ thống (Admin / Cicafood Core)
@@ -172,11 +178,6 @@ define('DB_HOST', 'localhost');
 
 ---
 
-## Video Demo
-
-[![Watch the demo](https://img.youtube.com/vi/6dcfDsn0eN4/maxresdefault.jpg)](https://www.youtube.com/watch?v=6dcfDsn0eN4)
-
----
 
 ##  Cấu trúc thư mục dự án
 
