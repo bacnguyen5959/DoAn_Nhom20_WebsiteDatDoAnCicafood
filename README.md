@@ -68,11 +68,7 @@ Dự án được thực hiện trong khuôn khổ môn học **Phần Mềm Mã
 
 ---
 
-##  Link Website đã Deploy
 
- **Website chính thức:** [https://cicafood.online](https://cicafood.online)
-
---- 
 
 ## Hướng dẫn cài đặt
 
